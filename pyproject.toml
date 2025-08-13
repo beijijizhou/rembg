@@ -1,12 +1,13 @@
 [project]
 name = "rembg-service"
 version = "0.1.0"
-description = "A Flask service for future AI-based image background removal"
-requires-python = ">=3.11"
+description = "A Flask service for AI-based image background removal"
+requires-python = ">=3.9,<3.10"
 dependencies = [
     "flask==3.0.3",
     "flask-cors==5.0.0",
+    "rembg==2.0.57",
 ]
 
 [tool.uv]
-dev-dependencies = []
+constraint-dependencies = ["llvm>0.43.0"]
